@@ -1,4 +1,4 @@
-# AI - exp 1 -1 Pacman
+# AI - exp 1 - python - Pacman
 # ID: 17341137
 
 import sys
@@ -29,7 +29,7 @@ def dfs(map, x, y, used):
     global res
     if len(res) and len(used) > len(res):
         return
-    if x == -1 or y == -1 or x == len(map) or y == len(map[0]) or map[x][y] == '0' or (x, y) in used:
+    if x == -1 or y == -1 or x == len(map) or y == len(map[0]) or map[x][y] == '1' or (x, y) in used:
         return
     elif map[x][y] == 'E':
         # print("goal with %d" % (len(used) + 1))
@@ -51,8 +51,8 @@ if __name__ == "__main__":
     FilePath = "./MazeData.txt"
     Maze_with_nums = []
     res = []
-    with open(FilePath, 'r').readlines() as Maze:
-        for i in Maze:
+    with open(FilePath, 'r') as Maze:
+        for i in Maze.readlines():
             if i[0] == '1' or i[0] == '0':
                 Maze_with_nums.append(i[:-1])
     formatprint(Maze_with_nums)
