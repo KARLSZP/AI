@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e218a637-f053-443b-aab8-0ea105a1471a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6500e761-cc03-44da-8f0f-40046a513cd8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Exp1/E01_20190829_Maze/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Exp1/E01_20190829_Maze/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Latex教程/LATEX-插图指南.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Latex教程/LatexUsrGuide.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Latex教程/Latex符号对应表.pdf" beforeDir="false" />
@@ -18,37 +18,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/E01_20190829_Maze$sol_exp1.coverage" NAME="sol_exp1 Coverage Results" MODIFIED="1567061358598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/E02_20190904_15puzzle$sol_exp2.coverage" NAME="sol_exp2 Coverage Results" MODIFIED="1567687540074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="2056749657">
+    <session id="-1836189193">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1891" />
+          <entry key="py" value="3964" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1891" />
+          <entry key="Python" value="3964" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="E02_20190904_15puzzle" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sol_exp1.py">
+        <entry file="file://$PROJECT_DIR$/sol_exp2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="14" lean-forward="true" selection-end-line="67" />
+            <state relative-caret-position="2596">
+              <caret line="118" column="16" lean-forward="true" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+              <folding>
+                <element signature="e#49#59#0" expanded="true" />
+                <marker date="1567687540012" expanded="true" signature="2263:2461" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,13 +79,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>goal</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sol_exp1.py" />
+        <option value="$PROJECT_DIR$/15puzzle/sol_exp2.py" />
+        <option value="$PROJECT_DIR$/sol_exp2.py" />
       </list>
     </option>
   </component>
@@ -78,11 +102,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="1030" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,8 +118,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="E01_20190829_Maze" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E01_20190829_Maze" type="462c0819:PsiDirectoryNode" />
+              <item name="E02_20190904_15puzzle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E02_20190904_15puzzle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -123,8 +146,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="sol_exp1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="E01_20190829_Maze" />
+    <configuration name="sol_exp2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="E02_20190904_15puzzle" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -136,7 +159,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sol_exp1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sol_exp2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,7 +170,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sol_exp1" />
+        <item itemvalue="Python.sol_exp2" />
       </list>
     </recent_temporary>
   </component>
@@ -156,43 +179,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e218a637-f053-443b-aab8-0ea105a1471a" name="Default Changelist" comment="" />
-      <created>1567040019563</created>
+      <changelist id="6500e761-cc03-44da-8f0f-40046a513cd8" name="Default Changelist" comment="" />
+      <created>1567663764586</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567040019563</updated>
+      <updated>1567663764586</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="0" width="781" height="870" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.56708163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="0" y="23" width="1536" height="841" id="Run" order="2" type="WINDOWED" weight="0.8993289" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
+      <window_info anchor="bottom" x="0" y="23" width="1536" height="841" id="Run" order="2" type="WINDOWED" weight="0.3292683" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3292683" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -206,27 +219,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="cur" language="Python" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>cur</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sol_exp1.py">
+    <entry file="file://$PROJECT_DIR$/15puzzle/sol_exp2.py" />
+    <entry file="file://$PROJECT_DIR$/sol_exp2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="14" lean-forward="true" selection-end-line="67" />
+        <state relative-caret-position="2596">
+          <caret line="118" column="16" lean-forward="true" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+          <folding>
+            <element signature="e#49#59#0" expanded="true" />
+            <marker date="1567687540012" expanded="true" signature="2263:2461" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
