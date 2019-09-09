@@ -10,7 +10,10 @@ def h(node):
     val = 0
     for i in range(len(node)):
         for j in range(len(node[0])):
-            val += abs(i - (node[i][j]-1)/4) + abs(j - (node[i][j]-1) % 4)
+            if not node[i][j]:
+                val += abs(3-i) + abs(3-j)
+            else:
+                val += abs(i - (node[i][j]-1)/4) + abs(j - (node[i][j]-1) % 4)
     return int(val)
 
 
