@@ -8,7 +8,13 @@ Preview：
 * UninformedSearch
 * HeuristicSearch
 
-## Experiments
+## Assignment
+
+Assignments for the course：
+
+* T01
+
+## Experiment
 
 Experiments would be organized as：
 
