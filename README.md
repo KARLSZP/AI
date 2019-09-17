@@ -7,6 +7,8 @@ Preview：
 * intro1
 * UninformedSearch
 * HeuristicSearch
+* GametreeSearch
+* CSP
 
 ## Assignment
 
@@ -34,6 +36,10 @@ Experiments would be organized as：
 - Exp2
 
   15Puzzle problem, solved with ida* algorithm.
+  
+- Exp3
+
+  Othello, AKA Reversi, with alpha-beta pruning algorithm and minmax tree(Negamax Tree).
 
 ## Ref
 

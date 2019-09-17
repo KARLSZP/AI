@@ -6,7 +6,7 @@ using namespace std;
 
 int const MAX = 65534;
 
-int  deepth = 10;         //最大搜索深度  （可调节）
+int  depth = 12;         //最大搜索深度  （可调节）
 
 //基本元素   棋子，颜色，数字变量
 
@@ -187,21 +187,52 @@ Do * Find(Othello *board, enum Option player, int step, int min, int max, Do *ch
 
 		
 		/* 下面的if条件和α-β剪枝有关，这里不解释，你们自己把注释写上去hh */
-		if (thisChoice.score>min && thisChoice.score<max)    /* 可以预计的更优值 */
-		{
-			min = thisChoice.score;
-			choice->score = thisChoice.score;
-			choice->pos.first = thisChoice.pos.first;
-			choice->pos.second = thisChoice.pos.second;
+		
+		/* 使用Negamax算法代替minmax算法，实现α-β剪枝*/
+		// 其中，max 取上一层min的相反数，min取当前选择的score。
+		// 对每一层，我方行棋选择我方获益分数最大的，对手行棋选择我方获益分数最小的；
+		// 因此，实际上只需要将每一层的max min调换并取反即可；
+		// 故假设根节点为第0层，beta层的数值为负。
+		// 剪枝条件：beta <= alpha, 即score >= max。
+
+		if (player == WHITE) {
+			int alpha = -max, beta = -min;
+			if (thisChoice.score > -beta) {
+				beta = -thisChoice.score;
+				choice->score = thisChoice.score;
+				choice->pos.first = thisChoice.pos.first;
+				choice->pos.second = thisChoice.pos.second;
+				min = -beta;
+				if (beta <= alpha) break;
+			}
 		}
-		else if (thisChoice.score >= max)    /* 好的超乎预计 */
-		{
-			choice->score = thisChoice.score;
-			choice->pos.first = thisChoice.pos.first;
-			choice->pos.second = thisChoice.pos.second;
-			break;
+		else if(player == BLACK) {
+			int alpha = min, beta = max;
+			if (thisChoice.score > alpha) {
+				alpha = thisChoice.score;
+				choice->score = thisChoice.score;
+				choice->pos.first = thisChoice.pos.first;
+				choice->pos.second = thisChoice.pos.second;
+				min = alpha;
+				if (beta <= alpha) break;
+			}
 		}
-		/* 不如已知最优值 */
+
+		// if (thisChoice.score>min && thisChoice.score<max)    /* 可以预计的更优值 */
+		// {
+		// 	min = thisChoice.score;
+		// 	choice->score = thisChoice.score;
+		// 	choice->pos.first = thisChoice.pos.first;
+		// 	choice->pos.second = thisChoice.pos.second;
+		// }
+		// else if (thisChoice.score >= max)    /* 好的超乎预计 */
+		// {
+		// 	choice->score = thisChoice.score;
+		// 	choice->pos.first = thisChoice.pos.first;
+		// 	choice->pos.second = thisChoice.pos.second;
+		// 	break;
+		// }
+		// /* 不如已知最优值 */
 	}
 	free(allChoices);
 	return choice;
@@ -300,7 +331,7 @@ start:
 				{   
 					cout << Player << "..........................";
 					
-					pChoice = Find(pBoard, present, deepth, -MAX, MAX, pChoice);
+					pChoice = Find(pBoard, present, depth, -MAX, MAX, pChoice);
 					i = pChoice->pos.first;
 					j = pChoice->pos.second;
 					system("cls");
@@ -626,7 +657,7 @@ int Othello::Judge(Othello *board, enum Option player)
 	int value = 0;
 	int i, j;
 	Stable(board);
-	
+
 	// 对稳定子给予奖励
 	for (i = 0; i<6; i++)
 	{
@@ -635,18 +666,30 @@ int Othello::Judge(Othello *board, enum Option player)
 			value += (board->cell[i][j].color)*(board->cell[i][j].stable);
 		}
 	}
-
-	// 对四个角给予额外奖励
-	value += 64 * board->cell[0][0].color;
-	value += 64 * board->cell[0][5].color;
-	value += 64 * board->cell[5][0].color;
-	value += 64 * board->cell[5][5].color;
 	
-	// 对X-square给予惩罚(不懂X-square是啥的说明你没认真听课，还不快去参考发到群里的那个网址)
-	value -= 32 * board->cell[1][1].color;
-	value -= 32 * board->cell[1][4].color;
-	value -= 32 * board->cell[4][1].color;
-	value -= 32 * board->cell[4][4].color;
+	 int V[6][6] = {{ 20,  -8,  11,  11,  -8,  20},
+					{ -8, -15,  -4,  -4, -15,  -8},
+					{ 11,  -4,   2,   2,  -4,  11},
+					{ 11,  -4,   2,   2,  -4,  11},
+					{ -8, -15,  -4,  -4, -15,  -8},
+					{ 20,  -8,  11,  11,  -8,  20}};
+
+	 for (int i = 0; i < 6; ++i)
+	 {
+	 	for (int j = 0; j < 6; ++j)
+	 	{
+	 		value += V[i][j] * board->cell[i][j].color;
+	 	}
+	 }
+
+	// 行动力计算
+	int my_mov, opp_mov, mov = 0;
+	my_mov = Rule(board, player);
+	opp_mov = Rule(board, (enum Option) - player);
+	if(my_mov > opp_mov)
+		value += 78.922 * (100.0 * my_mov)/(my_mov + opp_mov);
+	else if(my_mov < opp_mov)
+		value += 78.922 * -(100.0 * opp_mov)/(my_mov + opp_mov);
 
 	return value*player;
 }
