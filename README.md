@@ -9,6 +9,7 @@ Preview：
 * HeuristicSearch
 * GametreeSearch
 * CSP
+* KRR
 
 ## Assignment
 
@@ -40,6 +41,10 @@ Experiments would be organized as：
 - Exp3
 
   Othello, AKA Reversi, with alpha-beta pruning algorithm and minmax tree(Negamax Tree).
+  
+- Exp4
+
+  Futoshiki, a SUDOKU-like puzzle game, with Forward Looking algorithm, using MRV(Most Resticted Values) Heuristics.
 
 ## Ref
 
