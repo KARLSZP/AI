@@ -27,6 +27,12 @@ Experiments would be organized as：
   * Report
 * **Exx_date_name.zip**
   * The experiment document.
+* **Pxx_17341137**
+  - Result: Store the results of the experiment.
+  - Sourcecode: Store the source codes for the experiment.
+  - Report
+* **Pxx_name.zip**
+  - The project document.
 
 **Index**
 
@@ -45,6 +51,14 @@ Experiments would be organized as：
 - Exp4
 
   Futoshiki, a SUDOKU-like puzzle game, with Forward Looking algorithm, using MRV(Most Resticted Values) Heuristics.
+  
+- Exp5
+
+  Tutorial to Prolog, Family Tree.
+
+- Proj1
+
+  A implementation of the Pacman, using minimax and alpha-beta pruning, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
 
 ## Ref
 
