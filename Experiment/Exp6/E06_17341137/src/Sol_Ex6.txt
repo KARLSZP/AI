@@ -1,0 +1,70 @@
+1. What restaurants have branches in beigang?
+setof(A,branch(A,beigang),Res).
+>>> Res = [huangmenjimifan,mixuebingcheng,shaxianxiaochi].
+
+2. What districts have restaurants of yuecai and xiangcai?
+setof(A,A^(restaurant(R,_,yuecai),branch(R,P),district(P,A)),Res).
+>>> Res = [panyu,tianhe,yuexiu] .
+
+3. What restaurants have the least number of branches?
+%% Generate a list of the number of branches of each restaurant:
+%%      findall(Res,setof(L,(restaurant(R,_,_),setof(B,branch(R,B),Bran),length(Bran,L)),Res),List);
+%% Use min_list() to determine which restaurant has the least number of branches:
+%%      min_list(Results,Lm);
+findall(R,(findall(Resu,setof(L,(restaurant(R,_,_),setof(B,branch(R,B),Bran),length(Bran,L)),Resu),Results),setof(Bs,branch(R,Bs),Ls),length(Ls,Lm),min_list(Results,Lm)),Res).
+>>> Res = [hongmenyan].
+
+4. What areas have two or more restaurants?
+setof(A,R^L^LL^(setof(R,branch(R,A),L),length(L,LL),LL>=2),Res).
+>>> Res = [bainaohui,beigang,dongpu,shiqiao,tianhebei,xintiandi,yongfu,yuancun].
+
+5. Which restaurant has the longest history?
+findall(R1,(restaurant(R1,Y1,_),restaurant(R2,Y2,_),R1\=R2,Y1<Y2,setof(Rs,restaurant(Rs,Y1,_),Results),length(Results,1)),Res).
+>>> Res = [mixuebingcheng,mixuebingcheng,mixuebingcheng,mixuebingcheng,mixuebingcheng,mixuebingcheng,mixuebingcheng,mixuebingcheng,mixuebingcheng|...].
+
+6. What restaurants have at least 10 branches?
+setof(R,Bran^L^B^(restaurant(R,_,_),setof(B,R^branch(R,B),Bran),length(Bran,L),L>=10),Res).
+>>>
+    Res = [diandude] ;
+    Res = [mixuebingcheng] ;
+    Res = [muwushaokao] ;
+    Res = [tongxianghui] ;
+    Res = [dagangxianmiaoshaoji].
+
+
+7. Please define the new relation below using Prolog and test it.
+%% sameDistrict(Restaurant1,Restaurant2): Restaurant1 and Restaurant2 have one or more branches in the same district.
+%% sameDistrict(R1,R2):-restaurant(R1,_,_),restaurant(R2,_,_),R1\=R2,branch(R1,B),branch(R2,B).
+%% sameDistrict(R,R).
+sameDistrict(X,Y),X\=Y,write(X),write(' <=> '),write(Y),nl,fail.
+>>>
+    mixuebingcheng <=> diandude
+    mixuebingcheng <=> ajukejiacai
+    mixuebingcheng <=> hongmenyan
+    mixuebingcheng <=> huangmenjimifan
+    mixuebingcheng <=> shaxianxiaochi
+    mixuebingcheng <=> yangguofu
+    muwushaokao <=> dagangxianmiaoshaoji
+    diandude <=> mixuebingcheng
+    diandude <=> tongxianghui
+    diandude <=> tongxianghui
+    ajukejiacai <=> mixuebingcheng
+    ajukejiacai <=> hongmenyan
+    ajukejiacai <=> tongxianghui
+    ajukejiacai <=> yangguofu
+    hongmenyan <=> mixuebingcheng
+    hongmenyan <=> ajukejiacai
+    hongmenyan <=> yangguofu
+    dagangxianmiaoshaoji <=> muwushaokao
+    dagangxianmiaoshaoji <=> huangmenjimifan
+    huangmenjimifan <=> mixuebingcheng
+    huangmenjimifan <=> dagangxianmiaoshaoji
+    huangmenjimifan <=> shaxianxiaochi
+    shaxianxiaochi <=> mixuebingcheng
+    shaxianxiaochi <=> huangmenjimifan
+    tongxianghui <=> diandude
+    tongxianghui <=> diandude
+    tongxianghui <=> ajukejiacai
+    yangguofu <=> mixuebingcheng
+    yangguofu <=> ajukejiacai
+    yangguofu <=> hongmenyan

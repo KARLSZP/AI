@@ -10,12 +10,14 @@ Preview：
 * GametreeSearch
 * CSP
 * KRR
+* Planning
 
 ## Assignment
 
 Assignments for the course：
 
 * T01
+* T02
 
 ## Experiment
 
@@ -38,27 +40,31 @@ Experiments would be organized as：
 
 - Exp1
 
-  Pacman, to find the shortest path towards the goal.
+  Pacman, to find the shortest path towards the goal with **DFS/BFS**.
 
 - Exp2
 
-  15Puzzle problem, solved with ida* algorithm.
+  15Puzzle problem, solved with **ida* algorithm**.
   
 - Exp3
 
-  Othello, AKA Reversi, with alpha-beta pruning algorithm and minmax tree(Negamax Tree).
+  Othello, AKA Reversi, with **minmax tree(Negamax Tree)** and **alpha-beta pruning algorithm**.
   
 - Exp4
 
-  Futoshiki, a SUDOKU-like puzzle game, with Forward Looking algorithm, using MRV(Most Resticted Values) Heuristics.
+  Futoshiki, a SUDOKU-like puzzle game, with **Forward Looking algorithm**, using **MRV(Most Resticted Values)** Heuristics.
   
 - Exp5
 
-  Tutorial to Prolog, Family Tree.
+  Tutorial to **Prolog**, Family Tree.
+
+- Exp6
+
+  Use **Prolog** to solve simple FOL(first order logic) problem.
 
 - Proj1
 
-  A implementation of the Pacman, using minimax and alpha-beta pruning, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
+  A implementation of the Pacman, using **minimax** and **alpha-beta pruning**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
 
 ## Ref
 
