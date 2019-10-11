@@ -44,7 +44,7 @@ Experiments would be organized as：
 
 - Exp2
 
-  15Puzzle problem, solved with **ida* algorithm**.
+  15Puzzle problem, solved with **ida\* algorithm**.
   
 - Exp3
 
