@@ -1,0 +1,8 @@
+﻿(move a f)
+(move b e)
+(move a c)
+(move b a)
+(move e f)
+(move b d)
+(move e b)
+(move f a)

@@ -3,7 +3,9 @@
 #include<cstring>
 using namespace std;
 
-const int SIZE = 9;
+const int SIZE = 7;
+static int nodes = 0; 
+
 
 struct Do {
     int val; // value
@@ -73,6 +75,7 @@ int main() {
     }
     display(ptr);
     FC(ptr, 0);
+    cout<<nodes<<endl;
     return 0;
 }
 
@@ -274,6 +277,7 @@ void Copyboard(futoshiki* dest, const futoshiki* src) {
 }
 
 bool FC(futoshiki* board, int level) {
+	nodes++;
     if (Goal(board)) {
         // Return when all cells are assigned.
         cout << "Goal!" << endl;
