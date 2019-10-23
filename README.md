@@ -11,6 +11,7 @@ Preview：
 * CSP
 * KRR
 * Planning
+* Uncertainty
 
 ## Assignment
 
@@ -73,9 +74,7 @@ Experiments would be organized as：
 - **Proj2**
 
   * Futoshiki Solver with GAC algorithm and MRV, COMPARE with **Exp4**.
-  * Use **Prolog** to solve the blocksworld problem. (Unsolved.)
-
-## Ref
+  * Use **Prolog** to solve the blocksworld problem.
 
 * Latex教程
 * sol_aima.pdf: solution to the book *AIMA*

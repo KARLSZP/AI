@@ -157,14 +157,14 @@ bool CheckCons(futoshiki* board, int c, Do* m) {
         return (tot == SIZE-1);
     }
     // c == 1 >>> col
-    else if (c == 0) {
+    else if (c == 1) {
         for (int i = 0;i<SIZE;i++) {
             tot += board->board[i][C].assigned;
         }
         return (tot == SIZE-1);
     }
     // c == 2 >>> neighbour
-    else if (c == 0) {
+    else if (c == 2) {
         tot += (R == 0)        ? 1 : board->board[R - 1][C].assigned;
         tot += (R == SIZE - 1) ? 1 : board->board[R + 1][C].assigned;
         tot += (C == 0)        ? 1 : board->board[R][C - 1].assigned;
