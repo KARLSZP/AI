@@ -65,7 +65,11 @@ Experiments would be organized as：
 
 - **Exp7**
 
-  Use **PDDL** to solve planning problem with STRIPS.
+  Use **PDDL** to solve planning problem with STRIPS - BlocksWorld & 8-puzzle.
+
+- **Exp8**
+
+  Use **PDDL** to solve planning problem with STRIPS - BoxMan.
 
 - **Proj1**
 
