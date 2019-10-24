@@ -1,0 +1,20 @@
+>>> Current Test Case: Level 1
+>>> Clear in 11 steps.
+>>> Level 1 Cleared.
+
+>>> Current Test Case: Level 10
+>>> Clear in 36 steps.
+>>> Level 10 Cleared.
+
+>>> Current Test Case: Level 30
+>>> Clear in 141 steps.
+>>> Level 30 Cleared.
+
+>>> Current Test Case: Level 40
+>>> Clear in 124 steps.
+>>> Level 40 Cleared.
+
+>>> Current Test Case: Level 50
+>>> Clear in 48 steps.
+>>> Level 50 Cleared.
+
