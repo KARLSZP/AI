@@ -99,7 +99,7 @@ is_in_state(X, [Y | Tail]):-
     length(X, L1),
     length(Y, L2),
     L1 == L2,
-    not(is_equal_queue_state(X, Y)),
+    not(is_same_state(X, Y)),
     is_in_state(X, Tail).
 
 % Get valid mvoes

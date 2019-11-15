@@ -2,7 +2,7 @@
 
 Preview：
 
-## PPTset
+## Slides
 
 * intro1
 * UninformedSearch
@@ -19,6 +19,7 @@ Assignments for the course：
 
 * T01
 * T02
+* T03 - not finished
 
 ## Experiment
 
@@ -71,14 +72,29 @@ Experiments would be organized as：
 
   Use **PDDL** to solve planning problem with STRIPS - BoxMan.
 
+- **Exp9**
+
+  Build a **BN(Bayes Network)** using **pomegranate**(an module in python).
+
+- **Exp10**
+
+  Implement **VE(Variable Elimination) algorithm** by hand, in python.
+
 - **Proj1**
 
   A implementation of the Pacman, using **minimax** and **alpha-beta pruning**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
-  
+
 - **Proj2**
 
-  * Futoshiki Solver with GAC algorithm and MRV, COMPARE with **Exp4**.
+  * Futoshiki Solver with **GAC algorithm** and **MRV,** COMPARE with **Exp4**.
   * Use **Prolog** to solve the blocksworld problem.
+
+- **Proj3**
+
+  - Use **Pddl** to solve 2x2 Rubik’s Cube problem.
+  - Implement **VE(Variable Elimination) algorithm** in **BN(Bayes Network)**.
+
+## Ref
 
 * Latex教程
 * sol_aima.pdf: solution to the book *AIMA*
