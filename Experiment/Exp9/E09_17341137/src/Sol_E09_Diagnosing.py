@@ -142,3 +142,16 @@ print('P(3) = ', model.predict_proba(
 # P(4)
 print('P(4) = ', model.predict_proba(
     {'PatientAge': 'A'})[3].parameters[0]['F'])
+
+# Helper
+print('P1 = ', model.predict_proba(
+    {})[5].parameters[0]['T'])
+
+print('P2 = ', model.predict_proba(
+    {'PatientAge': 'B'})[1].parameters[0]['IS'])
+
+print('P3 = ', model.predict_proba(
+    {'PatientAge': 'C', 'CTScanResult': 'HS', 'MRIScanResult': 'IS'})[4].parameters[0]['HS'])
+
+print('P4 = ', model.predict_proba(
+    {})[6].parameters[0]['N'])
