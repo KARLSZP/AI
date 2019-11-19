@@ -19,7 +19,7 @@ Assignments for the course：
 
 * T01
 * T02
-* T03 - not finished
+* T03
 
 ## Experiment
 

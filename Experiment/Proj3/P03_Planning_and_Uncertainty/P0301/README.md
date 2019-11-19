@@ -1,6 +1,6 @@
 # README
 
-Since Errors occurred millions of times on pddl on-line editor, I turn to ff for help.
+Since Errors occurred millions of times on pddl on-line editor, I turn to local ff-planer for help.
 
 ![image-20191111194420203](.assets/image-20191111194420203.png)
 
