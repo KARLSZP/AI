@@ -80,6 +80,10 @@ Experiments would be organized as：
 
   Implement **VE(Variable Elimination) algorithm** by hand, in python.
 
+- **Exp11**
+
+  Build a Decision Tree to predict classification problems, as a tutorial to ml.
+
 - **Proj1**
 
   A implementation of the Pacman, using **minimax** and **alpha-beta pruning**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
