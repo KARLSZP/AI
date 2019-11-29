@@ -4,14 +4,16 @@ Preview：
 
 ## Slides
 
-* intro1
-* UninformedSearch
-* HeuristicSearch
-* GametreeSearch
+* Introduction
+* Uninformed-Search
+* Heuristic-Search
+* Gametree-Search
 * CSP
 * KRR
 * Planning
 * Uncertainty
+* Machine-Learning-1
+* Machine-Learning-2
 
 ## Assignment
 
@@ -82,7 +84,11 @@ Experiments would be organized as：
 
 - **Exp11**
 
-  Build a Decision Tree to predict classification problems, as a tutorial to ml.
+  Build a **Decision Tree** to solve classification problems, as a tutorial to ml.
+
+- **Exp12**
+
+  Use **Naive Bayes algorithm** to solve classification problems in **Exp11**.
 
 - **Proj1**
 
