@@ -14,6 +14,7 @@ Preview：
 * Uncertainty
 * Machine-Learning-1
 * Machine-Learning-2
+* Machine-Learning-3
 
 ## Assignment
 
@@ -90,6 +91,10 @@ Experiments would be organized as：
 
   Use **Naive Bayes algorithm** to solve classification problems in **Exp11**.
 
+- Exp13
+
+  Use **GMM(Gaussian Multivariate Model)** with **EM algorithm** to solve clustering problem.
+
 - **Proj1**
 
   A implementation of the Pacman, using **minimax** and **alpha-beta pruning**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
@@ -108,6 +113,7 @@ Experiments would be organized as：
 
 * Latex教程
 * sol_aima.pdf: solution to the book *AIMA*
+* report_MATLAB_for_Machine_Learning_20191205
 
 ---
 
