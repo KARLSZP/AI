@@ -15,6 +15,7 @@ Preview：
 * Machine-Learning-1
 * Machine-Learning-2
 * Machine-Learning-3
+* Machine-Learning-5
 
 ## Assignment
 
@@ -23,6 +24,7 @@ Assignments for the course：
 * T01
 * T02
 * T03
+* T04 - not finished
 
 ## Experiment
 
@@ -91,9 +93,13 @@ Experiments would be organized as：
 
   Use **Naive Bayes algorithm** to solve classification problems in **Exp11**.
 
-- Exp13
+- **Exp13**
 
   Use **GMM(Gaussian Multivariate Model)** with **EM algorithm** to solve clustering problem.
+
+- **Exp14**
+
+  Use **Backward Propagation(BP) Algorithm** to build a **3-layer NN** with 1 hidden layer, to predict Horse-colic dataset.
 
 - **Proj1**
 
