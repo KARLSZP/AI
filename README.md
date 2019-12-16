@@ -24,7 +24,7 @@ Assignments for the course：
 * T01
 * T02
 * T03
-* T04 - not finished
+* T04
 
 ## Experiment
 
