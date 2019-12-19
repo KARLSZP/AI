@@ -15,6 +15,7 @@ Preview：
 * Machine-Learning-1
 * Machine-Learning-2
 * Machine-Learning-3
+* Machine-Learning-4
 * Machine-Learning-5
 
 ## Assignment
@@ -36,12 +37,6 @@ Experiments would be organized as：
   * Report
 * **Exx_date_name.zip**
   * The experiment document.
-* **Pxx_17341137**
-  - Result: Store the results of the experiment.
-  - Sourcecode: Store the source codes for the experiment.
-  - Report
-* **Pxx_name.zip**
-  - The project document.
 
 **Index**
 
@@ -101,6 +96,21 @@ Experiments would be organized as：
 
   Use **Backward Propagation(BP) Algorithm** to build a **3-layer NN** with 1 hidden layer, to predict Horse-colic dataset.
 
+- **Exp15**
+
+## Project
+
+Projects would be organized as：
+
+* **Pxx_17341137**
+  - Result: Store the results of the experiment.
+  - Sourcecode: Store the source codes for the experiment.
+  - Report
+* **Pxx_name.zip**
+  - The project document.
+
+**Index**
+
 - **Proj1**
 
   A implementation of the Pacman, using **minimax** and **alpha-beta pruning**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
@@ -114,6 +124,10 @@ Experiments would be organized as：
 
   - Use **Pddl** to solve 2x2 Rubik’s Cube problem.
   - Implement **VE(Variable Elimination) algorithm** in **BN(Bayes Network)**.
+
+- **Proj4**
+
+  - `Not finished`
 
 ## Ref
 
