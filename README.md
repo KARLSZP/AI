@@ -98,6 +98,8 @@ Experiments would be organized as：
 
 - **Exp15**
 
+  Implement a **reinforcement learning** tutorial and flappy  bird model using **Q-learning** strategy.
+
 ## Project
 
 Projects would be organized as：
@@ -127,13 +129,14 @@ Projects would be organized as：
 
 - **Proj4**
 
-  - `Not finished`
+  A implementation of **Reinforcement Learning(Value/Policy Iteration, Q-learning)**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
 
 ## Ref
 
 * Latex教程
 * sol_aima.pdf: solution to the book *AIMA*
 * report_MATLAB_for_Machine_Learning_20191205
+* T02_Answer.pdf
 
 ---
 
