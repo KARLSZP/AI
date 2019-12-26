@@ -27,6 +27,8 @@ Assignments for the course：
 * T03
 * T04
 
+**Assignments are all listed above, have fun here.**
+
 ## Experiment
 
 Experiments would be organized as：
@@ -99,6 +101,12 @@ Experiments would be organized as：
 - **Exp15**
 
   Implement a **reinforcement learning** tutorial and flappy  bird model using **Q-learning** strategy.
+  
+- **Exp16**
+
+  Implement a **CNN** with provided modules and utilities.
+
+**Experiments are all listed above, have fun here.**
 
 ## Project
 
@@ -130,6 +138,8 @@ Projects would be organized as：
 - **Proj4**
 
   A implementation of **Reinforcement Learning(Value/Policy Iteration, Q-learning)**, from [UC Berkeley CS188](http://ai.berkeley.edu/multiagent.html#Q5).
+
+**Projects are all listed above, have fun here.**
 
 ## Ref
 
