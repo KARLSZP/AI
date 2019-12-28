@@ -1,5 +1,9 @@
 # AI -Artificial Intelligence
 
+> This repository is accomplished and will not be updated regularly, please issue if necessary.
+>
+> @ 2019/12/28
+
 Preview：
 
 ## Slides
@@ -147,6 +151,7 @@ Projects would be organized as：
 * sol_aima.pdf: solution to the book *AIMA*
 * report_MATLAB_for_Machine_Learning_20191205
 * T02_Answer.pdf
+* Automated Machine Learning with Monte-Carlo Tree Search
 
 ---
 
