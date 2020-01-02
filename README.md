@@ -24,14 +24,7 @@ Preview：
 
 ## Assignment
 
-Assignments for the course：
-
-* T01
-* T02
-* T03
-* T04
-
-**Assignments are all listed above, have fun here.**
+Assignments had been removed for copyright issue.
 
 ## Experiment
 
