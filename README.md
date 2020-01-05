@@ -146,6 +146,10 @@ Projects would be organized as：
 * T02_Answer.pdf
 * Automated Machine Learning with Monte-Carlo Tree Search
 
+## Summary
+
+* AI Summary: summary for review.
+
 ---
 
 Record of AI course in SYSU, 8, 2019

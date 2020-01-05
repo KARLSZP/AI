@@ -39,7 +39,7 @@ bool in(vector < pair < int, int > > path, int itemx, int itemy) {
 
 void dfs(vector <string> & map, int x, int y, vector <pair<int, int> > used) {
     if (res.size() && res.size() < used.size())
-        return; 
+        return;
     else if (x == -1 || y == -1 || x == map.size() || y == map[0].size() || map[x][y] == '1' || in(used, x, y))
         return; 
     else if (map[x][y] == 'E') {
