@@ -1,4 +1,4 @@
-# AI -Artificial Intelligence
+# AI - Artificial Intelligence
 
 > This repository is accomplished and will not be updated regularly, please issue if necessary.
 >
